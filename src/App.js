@@ -9,7 +9,7 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      first: "First Last",
+      first: "FIRST LAST",
       url: "http://localhost:3030/api/vowels"
     };
     //this.url = 'http://localhost:3030/api/hello'
@@ -43,15 +43,15 @@ axios.post('http://localhost:3030/api/vowels', {first: this.state.first, last: t
     return (
       <div className="App font-effect-neon">
         <div className="App-header font-effect-neon">
-          <h2>Name Motif</h2>
+          <p>NAME MOTIF</p>
         </div>
         <div className="App-intro">
-        Turn your name into a motif!
+        TURN YOUR NAME INTO A MUSICAL MOTIF!
         <form onSubmit={(e)=> {this.submit(e)}}>
           <section></section>
           <section></section>
           <input type="text" value={this.state.first} onChange={this.first}></input>
-          <input id="btn" type="submit" value="Play Motif" />
+          <input id="btn" type="submit" value="PLAY" />
         </form>
         </div>
       </div>
