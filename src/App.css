@@ -1,0 +1,31 @@
+* {
+  font-family: Lato;
+}
+
+.App {
+  font-family: Lato;
+  text-align: center;
+  width: 100vh;
+  display: flex;
+  flex-flow: column;
+  margin: auto;
+  background: #000101;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+.App-header {
+  background: #0D0C0C;
+  border: 1px solid;
+  border-radius: 15px; 
+  height: 70px;
+  padding: 10px;
+  font-family: Lato;
+  box-shadow: 5px 5px 20px #D816A9 ;
+}
+
+.App-intro {
+  font-size: 16px;
+}
+
