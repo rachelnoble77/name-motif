@@ -26,8 +26,8 @@
   margin: 20px;
   font-family: 'Lato', sans-serif;
   box-shadow: 0px 1px 20px 4px #D816A9 ;
-  animation-name: bounce 5s infinite;
-  animation-duration: 4s;
+  animation: bounce 1s infinite alternate;
+  -webkit-animation: bounce 1s infinite alternate;
 }
 
 .App-header p {
@@ -37,10 +37,11 @@
   padding: 5px;
 }
 
+
 .App-intro {
   font-size: 16px;
-  animation-name: bounce 5s infinite;
-  animation-duration: 4s;
+  animation: bounce 1s infinite alternate;
+  -webkit-animation: bounce 1s infinite alternate;
   margin: 5px;
   padding: 3px;
 }
@@ -53,4 +54,21 @@ input {
   box-shadow: 0px 1px 20px 4px #D816A9 ;
   border: .01px solid #D816A9;
   border-radius: 5px; 
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
 }
